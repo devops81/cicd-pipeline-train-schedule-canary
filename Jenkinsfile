@@ -1,6 +1,6 @@
 pipeline {
-    agent { label : LinuxAgent }
-    environment {
+    agent label { "LinuxAgent" }
+environment {
         //be sure to replace "devops81" with your own Docker Hub username
         DOCKER_IMAGE_NAME = "devops81/train-schedule"
     }
